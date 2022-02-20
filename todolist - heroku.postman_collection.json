@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "92244127-7957-453c-b599-3813a9db6272",
+		"name": "todolist - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "『取得所有』待辦事項",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://afternoon-brushlands-49112.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"afternoon-brushlands-49112",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "『新增單筆』待辦事項",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Get HTTP request body data using Node.js\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://afternoon-brushlands-49112.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"afternoon-brushlands-49112",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "『刪除所有』待辦事項",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://afternoon-brushlands-49112.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"afternoon-brushlands-49112",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "『刪除單筆』待辦事項",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://afternoon-brushlands-49112.herokuapp.com/todos/20cdbd80-988a-4917-bccf-0e2667334e25",
+					"protocol": "https",
+					"host": [
+						"afternoon-brushlands-49112",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"20cdbd80-988a-4917-bccf-0e2667334e25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "『編輯單筆』待辦事項",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"qwewqe\"\n}"
+				},
+				"url": {
+					"raw": "https://afternoon-brushlands-49112.herokuapp.com/todos/dca866b7-fe73-4bba-9b34-5905e799c19a",
+					"protocol": "https",
+					"host": [
+						"afternoon-brushlands-49112",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"dca866b7-fe73-4bba-9b34-5905e799c19a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error 404",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://dry-hamlet-49008.herokuapp.com/todos/qwewq",
+					"protocol": "https",
+					"host": [
+						"dry-hamlet-49008",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"qwewq"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
