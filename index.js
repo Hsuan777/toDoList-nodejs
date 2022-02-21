@@ -5,9 +5,10 @@ const errorHandle = require('./errorHandle');
 const toDos = [];
 const requestListener = (request, response) => {
   const headers = {
-    'Content-Type': 'application/json',
     'Access-Control-Allow-Headers': 'Content-Type, Authorization, Content-Length, X-Requested-With',
-    'Access-Control-Allow-Headers': 'GET, POST, PATCH, DELETE, OPTIONS',
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'PATCH, POST, GET,OPTIONS,DELETE',
+    'Content-Type': 'application/json'
   };
   let body = '';
   request.on('data', (chunk) => body += chunk);
