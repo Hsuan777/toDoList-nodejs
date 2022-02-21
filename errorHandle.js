@@ -1,8 +1,9 @@
 function errorHandle(response, msg){
   const headers = {
-    'Content-Type': 'application/json',
     'Access-Control-Allow-Headers': 'Content-Type, Authorization, Content-Length, X-Requested-With',
-    'Access-Control-Allow-Headers': 'GET, POST, PATCH, DELETE, OPTIONS',
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'PATCH, POST, GET,OPTIONS,DELETE',
+    'Content-Type': 'application/json'
   };
   response.writeHead(200, headers);
   response.write(JSON.stringify({
